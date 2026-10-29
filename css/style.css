@@ -1,0 +1,235 @@
+:root {
+  --primary-color: #3e5468;   
+  --accent-color: #6b2b2e;    
+  --text-color: #1f2422;      
+  --bg-color: #e8e6e1;        
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #f1f1f1 !important;
+}
+
+.nav-link.active {
+  color: #fff !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* ===== Hero section ===== */
+.hero {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn-main {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn-main:hover {
+  background-color: #541f22;
+  color: #fff;
+}
+
+/* simple pattern divider - basotho blanket style */
+.pattern-strip {
+  height: 20px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--accent-color),
+    var(--accent-color) 10px,
+    var(--bg-color) 10px,
+    var(--bg-color) 20px
+  );
+}
+
+/* Why Visit section */
+.why-visit {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.why-visit h2 {
+  margin-bottom: 30px;
+}
+
+.why-visit .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.why-visit .icon {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+/* Cards (destinations/activities)  */
+.card {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  color: var(--primary-color);
+}
+
+.badge-custom {
+  background-color: var(--accent-color);
+  color: #fff;
+  margin-right: 5px;
+}
+
+/*Footer */
+footer {
+  background-color: var(--primary-color);
+  color: #f1f1f1;
+  text-align: center;
+  padding: 25px 10px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #f1f1f1;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*Carousel tweaks*/
+.carousel-caption {
+  background-color: rgba(31, 36, 34, 0.6);
+  border-radius: 4px;
+}
+
+/* accomodation accordion */
+.accordion-button {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+}
+
+/*gallery */
+.gallery-img {
+  cursor: pointer;
+  margin-bottom: 15px;
+  border: 2px solid transparent;
+}
+
+.gallery-img:hover {
+  border: 2px solid var(--accent-color);
+}
+
+/* Forms */
+.form-label {
+  font-weight: bold;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.error-text {
+  color: #b00020;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.success-text {
+  color: #1e7b34;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.is-invalid {
+  border-color: #b00020 !important;
+}
+
+.is-valid {
+  border-color: #1e7b34 !important;
+}
+
+#formSuccessMsg {
+  display: none;
+  background-color: #d4edda;
+  color: #1e7b34;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+/*  Pagination */
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* media Responsive design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero {
+    padding: 50px 15px;
+  }
+}

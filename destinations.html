@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <charset="UTF-8">
+  <name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Lesotho - Destinations</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Visit Lesotho</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="destinations.html">Destinations</a></li>
+            <li class="nav-item"><a class="nav-link" href="accommodation.html">Accommodation</a></li>
+            <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-4">Tourist Destinations</h1>
+    <p class="text-center mb-5">Explore some of the most beautiful places Lesotho has to offer.</p>
+
+    <!-- Page 1 destinations -->
+    <div id="page1" class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="C:/Users/Administrator/Pictures/1792354285303.jpg" class="card-img-top" alt="Maletsunyane Falls waterfall">
+          <div class="card-body">
+            <h3 class="card-title">Maletsunyane Falls</h3>
+            <p class="card-text">One of the highest single-drop waterfalls in Africa, located near Semonkong.</p>
+            <span class="badge badge-custom">Hiking</span>
+            <span class="badge badge-custom">Nature</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="C:/Users/Administrator/Pictures/sani pass.jpeg" class="card-img-top" alt="Sani Pass mountain road">
+          <div class="card-body">
+            <h3 class="card-title">Sani Pass</h3>
+            <p class="card-text">A dramatic mountain pass connecting Lesotho and South Africa, popular with 4x4 drivers.</p>
+            <span class="badge badge-custom">Adventure</span>
+            <span class="badge badge-custom">Scenic</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="C:/Users/Administrator/Pictures/thaba.jpeg" class="card-img-top" alt="Thaba Bosiu historic mountain">
+          <div class="card-body">
+            <h3 class="card-title">Thaba Bosiu</h3>
+            <p class="card-text">A historic mountain fortress and the burial place of King Moshoeshoe I.</p>
+            <span class="badge badge-custom">History</span>
+            <span class="badge badge-custom">Family-Friendly</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 2 destinations (hidden by default) -->
+    <div id="page2" class="row" style="display:none;">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="C:/Users/Administrator/Pictures/katse.jpg" class="card-img-top" alt="Katse Dam reservoir">
+          <div class="card-body">
+            <h3 class="card-title">Katse Dam</h3>
+            <p class="card-text">One of the largest dams in Africa, surrounded by stunning highland scenery.</p>
+            <span class="badge badge-custom">Scenic</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="C:/Users/Administrator/Pictures/Copy-of-_DSC7240-1-1024x683.jpg" class="card-img-top" alt="Semonkong village in the mountains">
+          <div class="card-body">
+            <h3 class="card-title">Semonkong</h3>
+            <p class="card-text">A remote mountain village known for abseiling and pony trekking.</p>
+            <span class="badge badge-custom">Adventure</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="C:/Users/Administrator/Pictures/1.jpg" class="card-img-top" alt="Afriski snow resort slopes">
+          <div class="card-body">
+            <h3 class="card-title">Afriski</h3>
+            <p class="card-text">Southern Africa's premier ski resort, open during the winter months.</p>
+            <span class="badge badge-custom">Winter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <nav aria-label="Destinations pagination">
+      <ul class="pagination">
+        <li class="page-item"><button class="page-link" id="btnPage1">1</button></li>
+        <li class="page-item"><button class="page-link" id="btnPage2">2</button></li>
+      </ul>
+    </nav>
+  </main>
+
+  <footer>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="destinations.html">Destinations</a> |
+      <a href="accommodation.html">Accommodation</a> |
+      <a href="activities.html">Activities</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+    <p>&copy; 2026 Visit Lesotho.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // simple pagination for destination cards
+    var btnPage1 = document.getElementById("btnPage1");
+    var btnPage2 = document.getElementById("btnPage2");
+    var page1 = document.getElementById("page1");
+    var page2 = document.getElementById("page2");
+
+    btnPage1.addEventListener("click", function () {
+      page1.style.display = "flex";
+      page2.style.display = "none";
+    });
+
+    btnPage2.addEventListener("click", function () {
+      page1.style.display = "none";
+      page2.style.display = "flex";
+    });
+  </script>
+</body>
+</html>

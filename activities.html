@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <charset="UTF-8">
+  <name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Lesotho - Activities</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Visit Lesotho</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+            <li class="nav-item"><a class="nav-link" href="accommodation.html">Accommodation</a></li>
+            <li class="nav-item"><a class="nav-link active" href="activities.html">Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-4">Things to Do</h1>
+
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Hiking &amp; Pony Trekking</h3>
+            <p class="card-text">Explore the mountains on foot or on the back of a Basotho pony, with routes for all levels.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Skiing at Afriski</h3>
+            <p class="card-text">Hit the slopes at Southern Africa's only ski resort during the winter season.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Cultural Village Visits</h3>
+            <p class="card-text">Learn about Basotho traditions, food and the famous Basotho blanket.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Abseiling at Semonkong</h3>
+            <p class="card-text">Descend one of the highest single-drop abseils in the world next to the Maletsunyane Falls.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo Gallery -->
+    <h2 class="text-center mb-4">Photo Gallery</h2>
+    <p class="text-center">Click on any photo to view it larger.</p>
+
+    <div class="row">
+      <div class="col-md-3 col-6">
+        <img src="C:/Users/Administrator/Pictures/1792354285303.jpg">
+      </div>
+      <div class="col-md-3 col-6">
+        <img src="C:/Users/Administrator/Pictures/sani pass.jpeg">
+      </div>
+      <div class="col-md-3 col-6">
+        <img src="C:/Users/Administrator/Pictures/thaba.jpeg">
+      </div>
+      <div class="col-md-3 col-6">
+        <img src="C:/Users/Administrator/Pictures/katse.jpg">
+      </div>
+      <div class="col-md-3 col-6">
+        <img src="C:/Users/Administrator/Pictures/Copy-of-_DSC7240-1-1024x683.jpg">
+      </div>
+      <div class="col-md-3 col-6">
+        <img src="C:/Users/Administrator/Pictures/1.jpg">
+      </div>
+      <div class="col-md-3 col-6">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFr0xkD0PHFMWPQPbXSfgxKJwYeyZV_TBObD2UxGXerg&s=10">
+      </div>
+      <div class="col-md-3 col-6">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkZXfxrtbf6hc43HMGhWxwGvIrkaGXn8E3dvL--TGvgw&s=10">
+      </div>
+    </div>
+  </main>
+
+  <!-- Gallery Modal -->
+  <div class="modal fade" id="galleryModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Photo Preview</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" alt="" class="img-fluid">
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-main" id="prevImgBtn">&laquo; Previous</button>
+          <button type="button" class="btn btn-main" id="nextImgBtn">Next &raquo;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="destinations.html">Destinations</a> |
+      <a href="accommodation.html">Accommodation</a> |
+      <a href="activities.html">Activities</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+    <p>&copy; 2026 Visit Lesotho.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
